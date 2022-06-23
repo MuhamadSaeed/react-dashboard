@@ -1,0 +1,68 @@
+.progressbar {
+    width: 40%;
+    box-shadow: 2px 4px 10px 1px rgb(221 221 221 / 47%);
+    padding: 1.5rem 1rem;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    .container {
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+        h3 {
+            opacity: 0.6;
+            margin-bottom: 20px;
+        }
+        .progress__bar {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .titleofpro {
+            margin-bottom: 15px;
+            opacity: 0.6;
+        }
+        .num {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        p {
+            opacity: 0.7;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .details {
+            display: flex;
+            justify-content: space-evenly;
+            .one {
+                h4 {
+                    opacity: 0.7;
+                    margin-bottom: 5px;
+                }
+                .info {
+                    display: flex;
+                    gap: 5px;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;               
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .progressbar {
+        width: 60%;
+    }
+}
+@media (max-width: 767px) {
+    .progressbar {
+        width: 75%;
+    }
+}
+@media (max-width: 576px) {
+    .progressbar {
+        width: 90%;
+    }
+}

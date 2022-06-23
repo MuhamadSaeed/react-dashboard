@@ -1,0 +1,87 @@
+.newPage {
+    .containerNew {
+        position: relative;
+        h2 {
+            margin: 15px 0 0px 15px;
+            opacity: 0.7;
+        }
+        .main {
+            margin: 15px;
+            box-shadow: 2px 4px 10px 1px rgb(221 221 221 / 47%);
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px 50px;
+                width: 60%;
+                .icon {
+                    cursor: pointer;
+                    font-size: 30px;
+                    color: #0000008c;
+                    transition: 0.2s;
+                    &:hover {
+                        color: #000;
+                    }
+                }
+                .inp {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        all: unset;
+                        border-bottom: 1px solid black;
+                        &::placeholder {
+                            font-size: 12px;
+                        }
+                    }
+                    label {
+                        position: relative;
+                        top: -8px;
+                        font-size: 18px;
+                        left: 0;
+                    }
+                }
+                button {
+                    all: unset;
+                    background: #008eff;
+                    text-align: center;
+                    color: #FFF;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    border-radius: 6px;
+                    height: 40px;
+                    &:hover {
+                        background-color: transparent;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .newPage {
+        .main {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+        form {
+            width: 100% !important;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .newPage {
+        form {
+            grid-template-columns: 1fr !important;
+        }
+    }
+}

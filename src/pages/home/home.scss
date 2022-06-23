@@ -1,0 +1,36 @@
+.home {
+    .containerHome {
+        position: relative;
+        .info {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            .responsiveContainer {
+                width: 60%;
+                height: 360px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .home {
+        .containerHome {
+            .info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .responsiveContainer {
+            width: 75% !important;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .home {
+        .responsiveContainer {
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 20px 0px;
+        }
+    }
+}

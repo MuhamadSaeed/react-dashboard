@@ -1,0 +1,48 @@
+.App.dark {
+    background-color: #000;
+    nav, .main .info .progressbar,.responsiveContainer, aside, .homeboxs .container .boxs .box, .MuiPaper-root, .usertable, .MuiDataGrid-root  {
+        color: #b3b3b3;
+        background-color: #111;
+        .icon {
+            color: #b3b3b3;
+        }
+        h4 {
+            color: #b3b3b3;
+        }
+        th, td {
+            color: #b3b3b3;
+        }
+    }
+    .homeboxs .container .boxs .box {
+        box-shadow: 2px 4px 10px 1px rgb(221 221 221 / 47%);
+    }
+    .MuiButtonBase-root, .MuiIconButton-root, .MuiIconButton-sizeSmall {
+        color: #b3b3b3 !important;
+    }
+    .usertable .some button:hover, .addAUser .main button:hover, .addAUser, .userinfoconatiner {
+        color: #b3b3b3;
+        background-color: transparent;
+    }
+    .addAUser {
+        height: 105vh;
+        .icon {
+            color: #b3b3b3 !important;
+        }
+    }
+    .addAUser .main, .userinfoconatiner article {
+        background: #111;
+    }
+    * {
+        box-shadow: none !important;
+    }
+    .MuiTablePagination-root {
+        color: #b3b3b3 !important;
+    }
+    .close {
+        background: #999;
+        color: white;
+    }
+    .userTableButpro {
+        background-color: #000;
+    }
+}
